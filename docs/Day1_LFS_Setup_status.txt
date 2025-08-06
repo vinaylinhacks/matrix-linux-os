@@ -8,3 +8,13 @@ Day 1 - Aug 6, 2025
 NOTE:
 sudo dnf groupinstall "Development Tools" -y
 sudo dnf install -y bison flex texinfo wget vim gawk m4 make patch xz xz-devel perl python3 gcc gcc-c++ glibc-devel
+
+/mnt/lfs/tools and /mnt/lfs/sources directories created
+/tools symlinked to /mnt/lfs/tool
+texinfo installed via CodeReady Builder (CRB) repo
+
+NOTE:
+sudo dnf config-manager --set-enabled crb
+sudo dnf makecache
+sudo dnf install texinfo
+
